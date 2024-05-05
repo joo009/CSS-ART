@@ -1,0 +1,54 @@
+
+:root {
+    --main-color: #ffd479; }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #b7dbff;
+    margin: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 80%;
+    box-shadow: 5px 50px 50px rgba(0,0,0,0.3);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 1000px solid transparent;
+    border-bottom: 100px solid #2ecc71;
+}
+
+.rectangle {
+    width: 150px;
+    height: 500px;
+    background: linear-gradient(to right, #ff4343, #346aff);
+    margin: 0 20px;
+}
+
+
+
+/* Ellipse using border-radius and calc */
+.ellipse {
+    width: 200px;
+    height: 100px;
+    background: #e74c3c;
+    border-radius: 50% / 20%;
+    margin-left: calc(100px + 5%);
+}
+
+/* Comments to explain the properties */
+/*
+.circle uses a border-radius of 50% to create a perfect circle.
+.rectangle demonstrates a linear gradient background.
+.triangle uses borders to form a triangle shape.
+.ellipse shows an ellipse with adjusted border-radius.
+*/
